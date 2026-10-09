@@ -1,0 +1,32 @@
+using System; 
+public delegate void Notify(); 
+class Publisher 
+{ 
+} 
+public event Notify OnMessage; 
+public void ShowMessage() 
+{ 
+} 
+Console.WriteLine("Event Raised"); 
+OnMessage?.Invoke(); 
+class Subscriber 
+{ 
+} 
+public void Display() 
+{ 
+} 
+Console.WriteLine("Event Received"); 
+class Program 
+{ 
+static void Main() 
+{ 
+Publisher p = new Publisher(); 
+Subscriber s = new Subscriber(); 
+p.OnMessage += s.Display; 
+p.ShowMessage(); 
+} 
+} 
+
+OUTPUT : 
+Event Raised 
+Event Received

@@ -1,0 +1,47 @@
+using System; 
+class Employee 
+{ 
+} 
+public int empId; 
+public string empName; 
+public void GetEmployee() 
+{ 
+} 
+empId = 1001; 
+empName = "Ravi"; 
+public void DisplayEmployee() 
+{ 
+} 
+Console.WriteLine("Employee ID   : " + empId); 
+Console.WriteLine("Employee Name : " + empName); 
+class Manager : Employee 
+{ 
+public double salary; 
+public void GetManager() 
+{ 
+} 
+salary = 50000; 
+public void DisplayManager() 
+{ 
+Console.WriteLine("Salary       
+} 
+} 
+class Program 
+{ 
+} 
+static void Main(string[] args) 
+{ 
+} 
+Manager m = new Manager(); 
+m.GetEmployee(); 
+m.GetManager(); 
+m.DisplayEmployee(); 
+m.DisplayManager(); 
+Console.ReadKey(); 
+
+
+OUTPUT : 
+Employee ID   : 1001 
+Employee Name : Ravi 
+Salary       
+ : 50000
